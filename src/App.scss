@@ -1,0 +1,297 @@
+@import "./scss/bootstrap";
+@import "./scss/auth";
+@import "./scss/screen-loader";
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1 0 auto;
+}
+.frontend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app-background {
+  // background-color: #e4d2f3; /* Light purple background */
+  height: 100vh;
+}
+
+.note-item {
+  // background-color: #f6e5ff; /* Light pinkish background for notes */
+  color: #333;
+  border: none;
+}
+
+.add-note-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  // background-color: #9575cd; /* Purple background */
+  color: white;
+  border: none;
+  border-radius: 50%;
+}
+
+.add-note-button:hover {
+  // background-color: #7e57c2; /* Darker purple on hover */
+}
+/* General Background and Typography */
+.app-background {
+  background-color: #1c1e21; /* Dark background for contrast */
+  color: #f0f2f5;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.text-accent {
+  color: #f39c12; /* Warm yellow-gold accent color for highlights */
+}
+
+.text-secondary {
+  color: #adb5bd;
+}
+
+/* Header Styling */
+.header-section h1 {
+  font-size: 2.8rem;
+  color: #f39c12;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.header-section h4 {
+  color: #868e96;
+  font-weight: 300;
+}
+
+/* Search Section */
+.search-section .input-group {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.search-section .input-group-text {
+  background-color: #3498db; /* Blue color for icon background */
+  border: none;
+}
+
+.search-section .form-control {
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.search-icon {
+  border-radius: 50px 0 0 50px;
+}
+
+/* Notes Section */
+.notes-section h5 {
+  color: #6c757d;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+/* Add Note Button */
+.btn-custom {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #2980b9;
+}
+
+.btn-custom .me-2 {
+  font-size: 1.4rem;
+  color: white;
+}
+
+/* Rounded Corners */
+.rounded-pill {
+  border-radius: 50px !important;
+}
+
+.rounded-pill-start {
+  border-radius: 50px 0 0 50px !important;
+}
+
+.rounded-pill-end {
+  border-radius: 0 50px 50px 0 !important;
+}
+
+/* General Container Styling */
+.form-card {
+  background-color: #f7f9fc;
+  color: #333;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* Accent Color for Header */
+.text-accent {
+  color: #3498db; /* Soft blue color for a welcoming look */
+}
+
+/* Form Input Styling */
+.form-control-lg {
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.form-control-lg::placeholder {
+  color: #aaa;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #3498db;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.8rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+/* Rounded Elements */
+.rounded-pill {
+  border-radius: 50px !important;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+/* Shadow */
+.shadow-lg {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+/* Card Container */
+.note-card {
+  background-color: #f9fafb; /* Light background for contrast */
+  padding: 1.5rem;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 1rem;
+  color: #343a40;
+}
+
+/* Title and Subtitle Styling */
+.card-title {
+  font-size: 1.75rem;
+  color: #007bff;
+}
+
+.card-subtitle {
+  color: #6c757d; /* Soft muted color for subtitle */
+  font-size: 1.1rem;
+}
+
+/* Content Styling */
+.content-section {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Created By Section */
+.created-by {
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+/* Border Styling */
+.border-top {
+  border-top: 1px solid #dee2e6;
+}
+
+/* Shadow and Rounding */
+.shadow-lg {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.rounded-4 {
+  border-radius: 1rem !important;
+}
+/* Card Container */
+.update-card {
+  background-color: #f7f9fc;
+  color: #333;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* Header Styling */
+.update-card h2 {
+  font-size: 1.75rem;
+  color: #007bff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.form-control-lg {
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.form-control-lg::placeholder {
+  color: #aaa;
+}
+
+/* Button Styling */
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.8rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.8rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Rounded Elements */
+.rounded-pill {
+  border-radius: 50px !important;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+/* Shadow */
+.shadow-lg {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
